@@ -1,0 +1,48 @@
+ ♻️ Smart Waste Classification System using CNN and Deep Learning for a Sustainable Environment
+
+ 🧩 Problem Statement
+
+Waste management has become a major challenge in achieving environmental sustainability.  
+Improper waste segregation leads to pollution, recycling inefficiency, and health hazards.  
+Manual segregation is time-consuming and error-prone.  
+This project aims to develop a **Deep Learning-based Smart Waste Classification System** using **Convolutional Neural Networks (CNN)** that can automatically classify waste as **Organic** or **Recyclable** from images.  
+By automating waste sorting, the project contributes to building **smart and sustainable cities**.
+
+🎯 Objectives
+
+- Build a **CNN model** capable of classifying waste images accurately.  
+- Use **Deep Learning** to analyze image patterns and automate waste recognition.  
+- Clean and preprocess the dataset (remove errors, duplicates, rename files).  
+- Evaluate model performance and visualize results.  
+- Promote **sustainability and environmental responsibility** through AI-based automation.  
+
+Week 1: Dataset Cleaning and Preparation
+ ✅ Tasks Completed
+- Verified image folders and class distribution  
+- Removed **326 duplicate images** using hashing  
+- Checked and removed corrupted image files  
+- Ensured all images had proper `.jpg` extensions  
+- Organized clean dataset into **Train** and **Test** directories  
+ 🧠 Output Summary
+- **TRAIN/O** → 12,565 images  
+- **TRAIN/R** → 9,999 images  
+- **TEST/O** → 1,400 images  
+- **TEST/R** → 1,112 images  
+- **Duplicate Images Removed:** 326  
+- **Corrupted Images Found:** 0  
+
+ 📊 Dataset Details
+
+**Source:** [Kaggle – Waste Classification Data](https://www.kaggle.com/datasets/techsash/waste-classification-data)
+
+**Dataset Structure:** 
+DATASET/
+│
+├── TRAIN/
+│   ├── O/   → Organic Waste Images  
+│   └── R/   → Recyclable Waste Images  
+│
+└── TEST/
+    ├── O/   → Organic Waste Images  
+    └── R/   → Recyclable Waste Images
+
