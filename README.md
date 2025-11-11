@@ -52,11 +52,13 @@ Week 2 – Model Development & Training (CNN – Image Classification)
 In Week 2, the goal was to build and train a Convolutional Neural Network (CNN) to classify images into two categories related to sustainability (example: recyclable vs. non-recyclable).
 
 🧠 Objectives of Week 2
-Objective	Status
+
+Objective	Status:
 Load dataset into training/testing sets	✅ Completed
 Build a CNN model using TensorFlow & Keras	✅ Completed
 Train the model and visualize accuracy/loss graphs	✅ Completed
 Save trained model for future prediction (Week 3)	✅ Completed
+
 📂 Folder Structure
 Week2/
 │
@@ -72,28 +74,13 @@ Week2/
 ├── sustainable_image_cnn.keras  (saved model)
 └── README.md
 
-🔧 Technologies Used
-Tool / Library	Purpose
-Python	Programming
-TensorFlow / Keras	CNN Model building & training
-Matplotlib	Accuracy & Loss Visualization
-Jupyter Notebook	Development Environment
-🚀 Model Architecture
-Input (224 x 224 x 3)
-↓
-Conv2D + MaxPooling
-↓
-Conv2D + MaxPooling
-↓
-Conv2D + MaxPooling
-↓
-Flatten
-↓
-Dense (128 neurons) + Dropout (0.5)
-↓
-Dense (1 neuron, sigmoid activation)
-↓
-Output → (0 = non-recyclable, 1 = recyclable)
+🔧 Technologies Used:
+*Tool / Library	Purpose
+*Python	Programming
+*TensorFlow / Keras	CNN Model building & training
+*Matplotlib	Accuracy & Loss Visualization
+*Jupyter Notebook	Development Environment
+
 
 🔁 Steps Performed
 ✅ Step 1: Load dataset using ImageDataGenerator
