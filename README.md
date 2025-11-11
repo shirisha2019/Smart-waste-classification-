@@ -46,3 +46,89 @@ DATASET/
     ├── O/   → Organic Waste Images  
     └── R/   → Recyclable Waste Images
 
+Week 2 – Model Development & Training (CNN – Image Classification)
+✅ Task Overview
+
+In Week 2, the goal was to build and train a Convolutional Neural Network (CNN) to classify images into two categories related to sustainability (example: recyclable vs. non-recyclable).
+
+🧠 Objectives of Week 2
+Objective	Status
+Load dataset into training/testing sets	✅ Completed
+Build a CNN model using TensorFlow & Keras	✅ Completed
+Train the model and visualize accuracy/loss graphs	✅ Completed
+Save trained model for future prediction (Week 3)	✅ Completed
+📂 Folder Structure
+Week2/
+│
+├── dataset/
+│   ├── train/
+│   │   ├── recyclable/
+│   │   └── non_recyclable/
+│   └── test/
+│       ├── recyclable/
+│       └── non_recyclable/
+│
+├── week2_cnn_training.ipynb  (Jupyter Notebook)
+├── sustainable_image_cnn.keras  (saved model)
+└── README.md
+
+🔧 Technologies Used
+Tool / Library	Purpose
+Python	Programming
+TensorFlow / Keras	CNN Model building & training
+Matplotlib	Accuracy & Loss Visualization
+Jupyter Notebook	Development Environment
+🚀 Model Architecture
+Input (224 x 224 x 3)
+↓
+Conv2D + MaxPooling
+↓
+Conv2D + MaxPooling
+↓
+Conv2D + MaxPooling
+↓
+Flatten
+↓
+Dense (128 neurons) + Dropout (0.5)
+↓
+Dense (1 neuron, sigmoid activation)
+↓
+Output → (0 = non-recyclable, 1 = recyclable)
+
+🔁 Steps Performed
+✅ Step 1: Load dataset using ImageDataGenerator
+
+Images are automatically resized to 224 × 224 and normalized.
+
+✅ Step 2: Build CNN model
+
+Used Conv2D, MaxPooling2D, Flatten, Dense, Dropout.
+
+✅ Step 3: Train the model
+
+Training example:
+
+Epochs: 10–15
+Batch size: 32
+Optimizer: Adam
+Loss Function: Binary Cross-Entropy
+
+✅ Step 4: Plot Accuracy & Loss Graphs
+
+Graphs show improvement across epochs.
+
+📈 Output Graphs (Generated in Notebook)
+
+Model Training Accuracy vs Validation Accuracy
+
+Model Training Loss vs Validation Loss
+
+(Graphs visible in notebook output.)
+
+💾 Saved Model
+
+The model is saved in the new recommended Keras format:
+
+model.save("sustainable_image_cnn.keras")
+
+
