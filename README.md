@@ -106,13 +106,6 @@ Used Conv2D, MaxPooling2D, Flatten, Dense, Dropout.
 
 ✅ Step 3: Train the model
 
-Training example:
-
-Epochs: 10–15
-Batch size: 32
-Optimizer: Adam
-Loss Function: Binary Cross-Entropy
-
 ✅ Step 4: Plot Accuracy & Loss Graphs
 
 Graphs show improvement across epochs.
