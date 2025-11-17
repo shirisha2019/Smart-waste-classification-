@@ -111,4 +111,79 @@ The model is saved in the new recommended Keras format:
 
 model.save("sustainable_image_cnn.keras")
 
+📘 Week 3 – Model Evaluation & Deployment
+Project: Smart Waste Classification System using CNN & Deep Learning
+🔹 Week 3 Objectives
 
+During Week 3, the goal was to evaluate the CNN model, analyze misclassifications, and deploy the final model using Streamlit.
+
+✅ Tasks Completed in Week 3
+1️⃣ Model Evaluation
+
+After training the CNN model, detailed evaluation was performed using:
+
+✔ Confusion Matrix
+
+Organic correctly predicted: 1328
+
+Organic misclassified as Recyclable: 72
+
+Recyclable correctly predicted: 952
+
+Recyclable misclassified as Organic: 160
+
+✔ Classification Report
+Metric	Organic (0)	Recyclable (1)
+Precision	0.89	0.93
+Recall	0.95	0.86
+F1-Score	0.92	0.89
+
+Overall Accuracy: 91%
+
+Total Test Images: 2512
+
+Misclassified Images Stored: 232
+
+2️⃣ Misclassified Image Storage
+
+A script was executed to identify wrongly classified images and store them for analysis.
+
+📁 Folder Created: misclassified_images/
+📌 Total Misclassified Images: 232
+
+This helps understand model weaknesses and evaluate improvement areas.
+
+3️⃣ Single Image Prediction
+
+A test image was passed through the trained model to verify real-time prediction.
+
+Example Output:
+
+Prediction: Recyclable (R)
+
+Probability: 0.638
+
+Image displayed with predicted label
+
+This validates the correctness of the trained CNN model.
+
+4️⃣ Deployment Using Streamlit
+
+The final model was deployed as a Streamlit web application.
+
+📄 File: app.py
+🎯 Features:
+
+Upload an image (JPG/PNG)
+
+Model predicts:
+
+Organic (O) or Recyclable (R)
+
+Shows prediction + confidence score
+
+Displays uploaded image
+
+📌 Command to Run App (in Terminal):
+
+streamlit run app.py
